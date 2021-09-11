@@ -1,0 +1,187 @@
+Nome: João Henrique Nunes De Campos
+
+%Quem possui alto risco de poder ter Covid?
+
+?- risco_alto_covid(joao).
+true.
+
+?- risco_alto_covid(evandro).
+false.
+
+% quem fez a primeira e segunda dose, ou quem fez só a primeira dose e
+% quem não fez as vacinas?
+
+?- 
+|    
+|    
+|    
+|    
+|    
+|    pessoas_vacinadas(X,Y).
+X = andre,
+Y = primeira_dose ;
+X = joao,
+Y = nao_vacinado ;
+X = evandro,
+Y = primeira_segunda_dose ;
+X = lucas,
+Y = nao_vacinado ;
+X = antonio,
+Y = primeira_segunda_dose ;
+X = laura,
+Y = primeira_segunda_dose ;
+X = ana,
+Y = primeira_segunda_dose ;
+X = camila,
+Y = primeira_segunda_dose ;
+X = eduardo,
+Y = primeira_dose ;
+X = eduarda,
+Y = primeira_segunda_dose ;
+X = rafael,
+Y = primeira_segunda_dose ;
+X = jean,
+Y = primeira_dose ;
+X = rafaela,
+Y = primeira_segunda_dose ;
+X = dana,
+Y = primeira_segunda_dose.
+
+%Quais as pessoas que possuem alto risco de covid?
+
+?- alto_nivel_covid(joao).
+false.
+
+?- alto_nivel_covid(evandro).
+false.
+
+?- alto_nivel_covid(dana).
+true.
+
+%Doenças que as pessoas possuem?
+
+?- doenca(X,Y).
+X = andre,
+Y = sem_doenca ;
+X = joao,
+Y = sem_doenca ;
+X = evandro,
+Y = sem_doenca ;
+X = lucas,
+Y = aids ;
+X = antonio,
+Y = cancer_pulmao ;
+X = laura,
+Y = diabete ;
+X = ana,
+Y = asma ;
+X = camila,
+Y = hepatite_ab ;
+X = eduardo,
+Y = sem_doenca ;
+X = eduarda,
+Y = sem_doenca ;
+X = rafael,
+Y = sem_doenca ;
+X = jean,
+Y = sem_doenca ;
+X = rafaela,
+Y = sem_doenca ;
+X = dana,
+Y = sem_doenca.
+
+%Quais são as idades das pessoas?
+
+?- idade_pessoas(X,Y).
+X = andre,
+Y = 30 ;
+X = joao,
+Y = 22 ;
+X = evandro,
+Y = 65 ;
+X = lucas,
+Y = 18 ;
+X = antonio,
+Y = 80 ;
+X = laura,
+Y = 45 ;
+X = ana,
+Y = 50 ;
+X = camila,
+Y = 60 ;
+X = eduardo,
+Y = 35 ;
+X = eduarda,
+Y = 68 ;
+X = rafael,
+Y = 71 ;
+X = jean,
+Y = 40 ;
+X = rafaela,
+Y = 66 ;
+X = dana,
+Y = 81.
+
+%Quem tem alto nível de poder ir para a internação?
+
+?- alto_nivel_internacao(X,Y).
+X = andre,
+Y = sem_internacao ;
+X = joao,
+Y = sem_internacao ;
+X = evandro,
+Y = sem_internacao ;
+X = lucas,
+Y = internacao_urgente ;
+X = antonio,
+Y = sem_internacao ;
+X = laura,
+Y = sem_internacao ;
+X = ana,
+Y = sem_internacao ;
+X = camila,
+Y = internacao ;
+X = eduardo,
+Y = internacao ;
+X = eduarda,
+Y = sem_internacao ;
+X = rafael,
+Y = internacao ;
+X = jean,
+Y = sem_internacao ;
+X = rafaela,
+Y = internacao ;
+X = dana,
+Y = internacao_urgente.
+
+%Quais pessoas estão e quais não estão com covid?
+
+?- pessoas_com_covid(X,Y).
+X = andre,
+Y = nao_contaminado ;
+X = joao,
+Y = nao_contaminado ;
+X = evandro,
+Y = nao_contaminado ;
+X = lucas,
+Y = contaminado ;
+X = antonio,
+Y = contaminado ;
+X = laura,
+Y = nao_contaminada ;
+X = ana,
+Y = nao_contaminada ;
+X = camila,
+Y = contaminada ;
+X = eduardo,
+Y = contaminado ;
+X = eduarda,
+Y = contaminada ;
+X = rafael,
+Y = contaminado ;
+X = jean,
+Y = nao_contaminado ;
+X = rafaela,
+Y = contaminada ;
+X = dana,
+Y = contaminada.
